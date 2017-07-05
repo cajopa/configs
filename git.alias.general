@@ -1,0 +1,15 @@
+; include via alias.path
+
+[alias]
+	cob=checkout -b
+	col=checkout -
+	com=checkout master
+	root=!pwd
+	unstage = reset HEAD --
+	st = status
+	last = log -1 HEAD
+	this = name-rev --name-only HEAD
+	pi = !git push -u origin $(git this)
+	cdr = !cd $(git root)
+	gdu = diff @{u}
+	consh = config --global --includes --list
