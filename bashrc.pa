@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/projects
+source /usr/local/bin/virtualenvwrapper.sh
+
+export PATH="${HOME}/bin:"$PATH
+
+if [ -d "${HOME}/Dropbox" ] && [ -e "${HOME}/bin/dropbox.py" ]; then
+    ${HOME}/bin/dropbox.py start
+    ${HOME}/bin/dropbox.py status
+fi

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+export EDITOR=vim
+export VISUAL=$EDITOR
+
+alias .=source
+alias ..='. ~/.bashrc'
+alias v.='vim ~/.bashrc && ..'
+alias l.='view ~/.bashrc'
+alias sagu='sudo apt-get update && sudo apt-get dist-upgrade -y'
+alias deac='deactivate'
+alias wop='workon $(basename $PWD)'
+
+function wocd
+{
+  declare -l target_dir="/devd/$1";
+  cd $target_dir || return 1
+  if ! wop;
+  then
+    mkvirtualenv $1 && wop
+  fi
+}

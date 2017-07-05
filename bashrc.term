@@ -1,0 +1,2 @@
+#so as not to be disturbed by Ctrl-S (XOFF) and Ctrl-Q (XON) in terminals:
+stty -ixon
