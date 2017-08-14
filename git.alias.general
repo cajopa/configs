@@ -16,3 +16,4 @@
 	gdu = diff @{u}
 	consh = config --global --includes --list
 	dc = diff --cached
+	cv = commit -v

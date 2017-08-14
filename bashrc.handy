@@ -3,6 +3,7 @@
 
 export EDITOR=vim
 export VISUAL=$EDITOR
+export PATH="/opt/bin:$PATH"
 
 alias .=source
 alias ..='. ~/.bashrc'
@@ -11,6 +12,7 @@ alias l.='view ~/.bashrc'
 alias sagu='sudo apt-get update && sudo apt-get dist-upgrade -y'
 alias deac='deactivate'
 alias wop='workon $(basename $PWD)'
+alias t1='tree -L 1'
 
 function wocd
 {

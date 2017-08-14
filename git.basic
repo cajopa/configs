@@ -1,3 +1,5 @@
+[color]
+	ui = always
 [push]
 	default = simple
 
