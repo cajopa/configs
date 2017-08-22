@@ -9,6 +9,7 @@ alias .=source
 alias ..='. ~/.bashrc'
 alias v.='vim ~/.bashrc && ..'
 alias l.='view ~/.bashrc'
+alias l1='ls -1 --classify --group-directories-first'
 alias sagu='sudo apt-get update && sudo apt-get dist-upgrade -y'
 alias deac='deactivate'
 alias wop='workon $(basename $PWD)'
