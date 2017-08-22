@@ -17,3 +17,4 @@
 	consh = config --global --includes --list
 	dc = diff --cached
 	cv = commit -v
+	scour = !git reset --hard HEAD && git clean -f
