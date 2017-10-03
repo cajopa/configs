@@ -1,0 +1,11 @@
+function mkpkg
+{
+	mkdir -p $1;
+	
+	local remaining_path=$1;
+	while [ $remaining_path != "." ];
+	do
+		touch $remaining_path/__init__.py;
+		remaining_path=$(dirname $remaining_path);
+	done;
+}
