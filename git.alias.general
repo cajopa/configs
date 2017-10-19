@@ -22,3 +22,4 @@
 	scour = !git reset --hard HEAD && git clean -f
 	aa = add .
 	au = add -u
+	ba = branch -a
