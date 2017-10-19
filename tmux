@@ -26,3 +26,11 @@ set-option -g allow-rename off
 
 #disable multi-command sequences
 set-option -g repeat-time 250
+
+unbind [
+bind Escape copy-mode
+unbind p
+bind p paste-buffer
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
+
