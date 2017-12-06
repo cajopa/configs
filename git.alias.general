@@ -23,3 +23,4 @@
 	aa = add .
 	au = add -u
 	ba = branch -a
+	remaster = rebase master
