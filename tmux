@@ -27,6 +27,9 @@ set-option -g allow-rename off
 #disable multi-command sequences
 set-option -g repeat-time 250
 
+#set scrollback buffer size
+set-option -g history-limit 32768
+
 unbind [
 bind Escape copy-mode
 unbind p
