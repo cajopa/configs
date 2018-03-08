@@ -32,8 +32,6 @@ set-option -g history-limit 32768
 
 unbind [
 bind Escape copy-mode
-unbind p
-bind p paste-buffer
 bind-key -t vi-copy 'v' begin-selection
 bind-key -t vi-copy 'y' copy-selection
 
