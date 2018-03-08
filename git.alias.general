@@ -19,6 +19,7 @@
 	consh = config --global --includes --list
 	dc = diff --cached
 	cv = commit -v
+	ca = commit --amend
 	scour = !git reset --hard HEAD && git clean -f
 	aa = add .
 	au = add -u
